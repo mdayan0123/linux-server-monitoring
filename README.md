@@ -1,46 +1,46 @@
-# Linux Server Monitoring
+# Linux Server Monitoring using Bash
 
-A simple Linux server monitoring project built with **Bash scripting** to monitor important system resources and running processes.
+A simple Linux server monitoring project built using **Bash scripting**.  
+The script monitors important system resources and displays their current status from the Linux terminal.
 
 ## 🚀 Project Overview
 
-This project provides a lightweight monitoring script that displays:
+This project demonstrates basic Linux system administration, Bash scripting, and server monitoring.
+
+The monitoring script checks:
 
 - CPU usage
 - Memory usage
 - Disk usage
 - Top running processes
 - System uptime
-- Load average
-- Basic resource status
-
-The script helps demonstrate practical **Linux administration, Bash scripting, system monitoring, and troubleshooting** skills.
+- CPU and memory warning thresholds
 
 ## 🛠️ Technologies Used
 
-- Linux
-- Ubuntu
-- Bash Shell
-- WSL2
+- Linux / Ubuntu
+- Bash Shell Scripting
+- Linux system commands
 - Git
 - GitHub
+- WSL2
 
 ## 📊 Monitoring Features
 
 ### CPU Monitoring
-Displays current CPU utilization and reports the CPU status.
+Displays current CPU utilization and shows a warning when CPU usage exceeds 80%.
 
 ### Memory Monitoring
-Shows memory usage and available memory.
+Displays memory utilization and shows a warning when memory usage exceeds 80%.
 
 ### Disk Monitoring
-Displays filesystem usage and available disk space.
+Displays current disk usage of the Linux filesystem.
 
 ### Process Monitoring
-Lists the top processes based on CPU usage.
+Displays the top processes based on CPU utilization.
 
 ### System Uptime
-Displays system uptime, logged-in users, and load average.
+Displays system uptime and load average.
 
 ## ▶️ How to Run
 
@@ -50,13 +50,13 @@ Clone the repository:
 git clone https://github.com/mdayan0123/linux-server-monitoring.git
 ```
 
-Enter the project directory:
+Go to the project directory:
 
 ```bash
 cd linux-server-monitoring
 ```
 
-Give the script execute permission:
+Give execution permission:
 
 ```bash
 chmod +x monitor.sh
@@ -68,28 +68,48 @@ Run the monitoring script:
 ./monitor.sh
 ```
 
-## 📷 Example Output
+## 📌 Example Output
 
-The script displays CPU, memory, disk, process, and system uptime information directly in the terminal.
+```text
+===== Linux Server Monitoring =====
+
+Date: Thu Oct 29 16:16:34 UTC 2026
+
+CPU Usage: 6%
+CPU Status: Normal
+
+Memory Usage: 72%
+Memory Status: Normal
+
+Disk Usage: 1%
+
+Top Processes:
+USER       PID  %CPU  %MEM  COMMAND
+mdayan    16763  300   0.1  ps aux --sort=-%cpu
+
+System Uptime:
+16:16:34 up 6:12, 2 users, load average: 4.10, 3.32, 4.11
+
+===== Monitoring Complete =====
+```
 
 ## 🎯 Skills Demonstrated
 
-- Linux command-line administration
+- Linux system administration
 - Bash scripting
-- System resource monitoring
-- Process management
-- CPU and memory troubleshooting
+- CPU and memory monitoring
 - Disk monitoring
+- Process troubleshooting
+- Linux command-line usage
 - Git and GitHub
-- Linux server administration fundamentals
 
 ## 🔮 Future Improvements
 
-- Add continuous monitoring mode
-- Add email/alert notifications
-- Export monitoring results to a log file
-- Add Prometheus integration
-- Create a Grafana dashboard
+- Add email alerts for high resource usage
+- Add continuous monitoring
+- Export monitoring data to logs
+- Add Prometheus and Grafana integration
+- Create automated health-check alerts
 
 ## 👨‍💻 Author
 
